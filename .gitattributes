@@ -1,0 +1,6 @@
+*.png binary
+*.FCStd binary
+*.step -diff
+*.csv text
+*.svg text
+*.html text

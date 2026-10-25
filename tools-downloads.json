@@ -1,0 +1,18 @@
+{
+  "approved_by_user": true,
+  "freecad": {
+    "version": "1.1.4",
+    "url": "https://github.com/FreeCAD/FreeCAD/releases/download/1.1.4/FreeCAD_1.1.4-Windows-x86_64-py311.7z",
+    "sha256": "4828741fc91ee37fafcdb97a1abacb18b04ba451ac4372d9ff7a7349b36f4d6d",
+    "published_sha256_matched": true,
+    "deployment": "project-local portable archive"
+  },
+  "openmodelica": {
+    "version": "1.27.1",
+    "url": "https://build.openmodelica.org/omc/builds/windows/releases/1.27/1/64bit/OpenModelica-v1.27.1-64bit.exe",
+    "sha256_local_record": "b7479c752e11648e7859341f986aa981a400ef3071e8e718101a8375037eaa8d",
+    "published_md5_matched": "d3852e01a89a49845e6be63a64462639",
+    "authenticode_status": "Valid",
+    "deployment": "official installer with project-local destination"
+  }
+}

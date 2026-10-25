@@ -1,0 +1,20 @@
+{
+  "stored_J": 0.5472,
+  "spring_mass_kg_assumed": 0.0456,
+  "spring_only_Wh_per_kg": 0.0033333333333333335,
+  "initial_force_N": 54.72,
+  "initial_available_torque_Nm": 0.98496,
+  "full_angle_deg": 57.29577951308232,
+  "nominal_root_stress_MPa": 136.8,
+  "nominal_root_strain": 0.003,
+  "peak_test_load_W": 13.74856551038848,
+  "peak_rpm": 161.6141777639409,
+  "delivered_J_at_0_6s": 0.4924799678328503,
+  "mesh_loss_J_at_0_6s": 0.05471999800528663,
+  "max_energy_balance_error_J": 3.416139082723646e-08,
+  "FE_tip_mm": {
+    "20": 19.96737,
+    "40": 19.99262
+  },
+  "max_tooth_overlap_mm3": 0.0
+}

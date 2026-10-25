@@ -1,0 +1,50 @@
+[
+  {
+    "case": "optimistic",
+    "material_J_kg": 2100000.0,
+    "discharge_efficiency": 0.8293499999999999,
+    "hour_idle_retention": 0.99,
+    "active_mass_kg": 231.93085950800116,
+    "active_mass_per_cartridge_kg": 1.1596542975400057,
+    "initial_kWh": 135.29300137966734,
+    "delivered_kWh": 100,
+    "conversion_loss_kWh": 20.57635497678907,
+    "relaxation_loss_kWh": 0.7490383798931911,
+    "residual_kWh": 13.96760802298507,
+    "total_mass_if_half_active_kg": 463.8617190160023,
+    "delivered_Wh_kg_if_half_active": 215.58148883708637,
+    "relaxation_integral_error_J": 0.00028379494324326515
+  },
+  {
+    "case": "reference",
+    "material_J_kg": 514499.99999999994,
+    "discharge_efficiency": 0.72675,
+    "hour_idle_retention": 0.95,
+    "active_mass_kg": 1124.628734562433,
+    "active_mass_per_cartridge_kg": 5.623143672812165,
+    "initial_kWh": 160.72818998121437,
+    "delivered_kWh": 100,
+    "conversion_loss_kWh": 37.59889920880632,
+    "relaxation_loss_kWh": 4.567030388112598,
+    "residual_kWh": 18.56226038429545,
+    "total_mass_if_half_active_kg": 2249.257469124866,
+    "delivered_Wh_kg_if_half_active": 44.45911656299076,
+    "relaxation_integral_error_J": 0.008658286184072495
+  },
+  {
+    "case": "low_conversion_sensitivity",
+    "material_J_kg": 514499.99999999994,
+    "discharge_efficiency": 0.22,
+    "hour_idle_retention": 0.95,
+    "active_mass_kg": 3715.1087856511276,
+    "active_mass_per_cartridge_kg": 18.575543928255637,
+    "initial_kWh": 530.9509639493069,
+    "delivered_kWh": 100,
+    "conversion_loss_kWh": 354.54545454545456,
+    "relaxation_loss_kWh": 15.086769702549047,
+    "residual_kWh": 61.31873970130329,
+    "total_mass_if_half_active_kg": 7430.217571302255,
+    "delivered_Wh_kg_if_half_active": 13.458556097499784,
+    "relaxation_integral_error_J": 0.02860252559185028
+  }
+]

@@ -1,0 +1,5 @@
+loadModel(Modelica);
+loadFile("../../models/RackMotor.mo");
+getErrorString();
+simulate(RackMotor, stopTime=0.6, numberOfIntervals=1200, tolerance=1e-9, outputFormat="csv");
+getErrorString();

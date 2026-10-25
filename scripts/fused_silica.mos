@@ -1,0 +1,13 @@
+loadModel(Modelica);
+loadFile("../../models/TensionHydraulic.mo");
+loadFile("../../models/BareGlassHydraulic.mo");
+loadFile("../../models/FusedSilicaHydraulic.mo");
+getErrorString();
+simulate(FusedSilicaHydraulic, stopTime=40, numberOfIntervals=2000, tolerance=1e-10, outputFormat="csv", fileNamePrefix="silica_same_strain", simflags="-override=peakStress=216000000");
+getErrorString();
+simulate(FusedSilicaHydraulic, stopTime=90, numberOfIntervals=2000, tolerance=1e-10, outputFormat="csv", fileNamePrefix="silica_0_5GPa", simflags="-override=peakStress=500000000");
+getErrorString();
+simulate(FusedSilicaHydraulic, stopTime=310, numberOfIntervals=3000, tolerance=1e-10, outputFormat="csv", fileNamePrefix="silica_1GPa");
+getErrorString();
+simulate(FusedSilicaHydraulic, stopTime=1200, numberOfIntervals=4000, tolerance=1e-10, outputFormat="csv", fileNamePrefix="silica_2GPa", simflags="-override=peakStress=2000000000");
+getErrorString();

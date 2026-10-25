@@ -1,0 +1,9 @@
+loadModel(Modelica);
+loadFile("../../models/TensionHydraulic.mo");
+getErrorString();
+simulate(TensionHydraulic, stopTime=18, numberOfIntervals=3600, tolerance=1e-9, outputFormat="csv", fileNamePrefix="variable_motor");
+getErrorString();
+simulate(TensionHydraulic, stopTime=18, numberOfIntervals=3600, tolerance=1e-9, outputFormat="csv", fileNamePrefix="fixed_motor", simflags="-override=mode=2");
+getErrorString();
+simulate(TensionHydraulic, stopTime=18, numberOfIntervals=3600, tolerance=1e-9, outputFormat="csv", fileNamePrefix="fixed_header", simflags="-override=mode=3");
+getErrorString();

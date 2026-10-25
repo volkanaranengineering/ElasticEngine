@@ -1,0 +1,25 @@
+[
+  {
+    "check": "axial_mesh_1",
+    "force_N": 21000.0,
+    "expected_force_N": 21000,
+    "strain_energy_J": 1.05,
+    "relative_error": 0.0,
+    "passed": true
+  },
+  {
+    "check": "axial_mesh_2",
+    "force_N": 21000.0,
+    "expected_force_N": 21000,
+    "strain_energy_J": 1.05,
+    "relative_error": 0.0,
+    "passed": true
+  },
+  {
+    "check": "spring_discharge",
+    "initial_energy_J": 5,
+    "delivered_to_damping_load_J": 4.999999059180183,
+    "max_energy_balance_error_J": 9.359977690692745e-07,
+    "passed": true
+  }
+]

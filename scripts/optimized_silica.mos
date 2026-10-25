@@ -1,0 +1,8 @@
+loadModel(Modelica);
+loadFile("../../models/TensionHydraulic.mo");
+loadFile("../../models/BareGlassHydraulic.mo");
+loadFile("../../models/FusedSilicaHydraulic.mo");
+loadFile("../../models/OptimizedSilicaHydraulic.mo");
+getErrorString();
+simulate(OptimizedSilicaHydraulic, stopTime=62.001, numberOfIntervals=3000, tolerance=1e-10, outputFormat="csv");
+getErrorString();

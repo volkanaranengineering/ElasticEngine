@@ -1,0 +1,7 @@
+loadModel(Modelica);
+getVersion(Modelica);
+getErrorString();
+loadFile("../../models/SpringDischarge.mo");
+getErrorString();
+simulate(SpringDischarge, stopTime=20, numberOfIntervals=2000, tolerance=1e-8, outputFormat="csv");
+getErrorString();

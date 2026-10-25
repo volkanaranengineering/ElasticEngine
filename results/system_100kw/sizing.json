@@ -1,0 +1,51 @@
+{
+  "target_output_kW": 100,
+  "target_delivered_kWh": 100,
+  "eta_assumed": 0.9,
+  "leaf_dimensions_m": [
+    2.0,
+    0.3,
+    0.04
+  ],
+  "leaf_stroke_m": 0.2,
+  "leaf_stiffness_N_per_m": 27360.000000000004,
+  "leaf_energy_J": 547.2000000000002,
+  "leaf_mass_kg": 45.6,
+  "root_stress_MPa": 136.80000000000004,
+  "leaves_per_module": 100,
+  "module_power_kW": 10,
+  "module_gross_J": 54720.000000000015,
+  "module_delivered_J": 48755.52000000001,
+  "module_duration_s": 4.875552000000001,
+  "lanes": 10,
+  "modules_per_lane": 739,
+  "total_modules": 7390,
+  "total_leaves": 739000,
+  "total_spring_mass_tonnes": 33698.4,
+  "solid_spring_volume_m3": 17736.0,
+  "initial_stored_kWh": 112.32800000000003,
+  "delivered_capacity_kWh": 100.08424800000002,
+  "residual_energy_kWh": 1.1232800000000005,
+  "discharge_loss_kWh": 11.120472000000001,
+  "duration_at_100kW_s": 3603.0329280000005,
+  "module_force_start_end_N": [
+    547200.0000000001,
+    54720.000000000015
+  ],
+  "module_available_torque_start_end_Nm": [
+    98496.00000000003,
+    9849.600000000004
+  ],
+  "module_rack_speed_start_end_m_per_s": [
+    0.02030539311241065,
+    0.2030539311241065
+  ],
+  "module_pinion_rpm_start_end": [
+    0.9695111055792842,
+    9.695111055792843
+  ],
+  "pinion_rotation_deg": 51.56620156177409,
+  "central_torque_at_1500rpm_Nm": 636.6197723675814,
+  "energy_only_minimum_mass_tonnes": 33670.03367003367,
+  "roundtrip_efficiency_if_charge_eta_90percent": 0.81
+}

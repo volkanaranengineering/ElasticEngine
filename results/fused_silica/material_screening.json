@@ -1,0 +1,65 @@
+{
+  "screening": [
+    {
+      "name": "E-glass",
+      "E_GPa": 72.3,
+      "rho_kg_m3": 2580,
+      "listed_filament_strength_GPa": 3.445,
+      "linear_rupture_screen_Wh_kg_NOT_working_rating": 8.836656081762872,
+      "net_Wh_kg_at_ASSUMED_1GPa": 0.5987346810769082,
+      "minimum_fibre_tonnes_100kWh_at_ASSUMED_1GPa": 167.01888693024426
+    },
+    {
+      "name": "S-2 glass",
+      "E_GPa": 86.9,
+      "rho_kg_m3": 2460,
+      "listed_filament_strength_GPa": 4.89,
+      "linear_rupture_screen_Wh_kg_NOT_working_rating": 15.535682543246606,
+      "net_Wh_kg_at_ASSUMED_1GPa": 0.5224413399197283,
+      "minimum_fibre_tonnes_100kWh_at_ASSUMED_1GPa": 191.4090489381348
+    },
+    {
+      "name": "Fused silica (Astroquartz)",
+      "E_GPa": 72.0,
+      "rho_kg_m3": 2200,
+      "listed_filament_strength_GPa": 6.0,
+      "linear_rupture_screen_Wh_kg_NOT_working_rating": 31.565656565656564,
+      "net_Wh_kg_at_ASSUMED_1GPa": 0.705078125,
+      "minimum_fibre_tonnes_100kWh_at_ASSUMED_1GPa": 141.82825484764544
+    }
+  ],
+  "quartzel_dry_roving_conversions": [
+    {
+      "tex": 267,
+      "typical_break_force_daN": 14,
+      "approx_break_stress_GPa": 1.153558052434457
+    },
+    {
+      "tex": 400,
+      "typical_break_force_daN": 22,
+      "approx_break_stress_GPa": 1.21
+    },
+    {
+      "tex": 640,
+      "typical_break_force_daN": 30,
+      "approx_break_stress_GPa": 1.0312500000000002
+    },
+    {
+      "tex": 667,
+      "typical_break_force_daN": 34,
+      "approx_break_stress_GPa": 1.12143928035982
+    },
+    {
+      "tex": 960,
+      "typical_break_force_daN": 38,
+      "approx_break_stress_GPa": 0.8708333333333333
+    },
+    {
+      "tex": 1600,
+      "typical_break_force_daN": 48,
+      "approx_break_stress_GPa": 0.66
+    }
+  ],
+  "silica_to_S2_mass_ratio_at_same_stress": 0.7409694350108058,
+  "silica_required_allowable_stress_ratio_for_equal_specific_energy": 0.8607958149356941
+}

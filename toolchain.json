@@ -1,0 +1,9 @@
+{
+  "freecad_cmd": "tools/FreeCAD_1.1.4-Windows-x86_64-py311/bin/freecadcmd.exe",
+  "freecad_gui": "tools/FreeCAD_1.1.4-Windows-x86_64-py311/bin/freecad.exe",
+  "python": "tools/FreeCAD_1.1.4-Windows-x86_64-py311/bin/python.exe",
+  "calculix": "tools/FreeCAD_1.1.4-Windows-x86_64-py311/bin/ccx.exe",
+  "gmsh": "tools/FreeCAD_1.1.4-Windows-x86_64-py311/bin/gmsh.exe",
+  "openmodelica_home": "tools/OpenModelica",
+  "omc": "tools/OpenModelica/bin/omc.exe"
+}

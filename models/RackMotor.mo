@@ -1,0 +1,30 @@
+model RackMotor
+  parameter Real k=2736 "N/m; longitudinal beam equivalent";
+  parameter Real x0=0.020 "m charged deflection";
+  parameter Real r=0.020 "m pitch radius";
+  parameter Real mass=0.15 "kg rack and coupling assumed";
+  parameter Real J=0.0002 "kg.m2 shaft inertia assumed";
+  parameter Real eta=0.90 "assumed forward mesh efficiency";
+  parameter Real damping=120 "N.s/m equivalent viscous test load";
+  Real q(start=0,fixed=true) "m released stroke";
+  Real v(start=0,fixed=true);
+  Real delivered(start=0,fixed=true) "J dissipated in test load";
+  Real loss(start=0,fixed=true);
+  Real extension, force, theta, omega, rpm, torque, power;
+  Real stored, kinetic, residual;
+equation
+  der(q)=v;
+  extension=x0-q;
+  force=k*extension;
+  (mass+J/r^2)*der(v)=eta*force-damping*v;
+  theta=q/r;
+  omega=v/r;
+  rpm=omega*30/Modelica.Constants.pi;
+  torque=eta*force*r;
+  power=damping*v^2;
+  der(delivered)=power;
+  der(loss)=(1-eta)*force*v;
+  stored=0.5*k*extension^2;
+  kinetic=0.5*(mass+J/r^2)*v^2;
+  residual=stored+kinetic+delivered+loss-0.5*k*x0^2;
+end RackMotor;

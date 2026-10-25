@@ -1,0 +1,7 @@
+{
+  "checks": "passed",
+  "expected_module_J": 600009.8480244114,
+  "simulated_module_J": 600009.8367167556,
+  "max_energy_error_J": 0.01392140914686024,
+  "simulation_cutoff_time_s": 60.1259836716697
+}

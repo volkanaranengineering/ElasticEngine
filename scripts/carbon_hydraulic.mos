@@ -1,0 +1,11 @@
+loadModel(Modelica);
+loadFile("../../models/CarbonHydraulicPlant.mo");
+getErrorString();
+simulate(CarbonHydraulicPlant, stopTime=3600, numberOfIntervals=7200, tolerance=1e-9, outputFormat="csv", fileNamePrefix="t1100_long", simflags="-override=L=500");
+getErrorString();
+simulate(CarbonHydraulicPlant, stopTime=3600, numberOfIntervals=7200, tolerance=1e-9, outputFormat="csv", fileNamePrefix="t1100_reference");
+getErrorString();
+simulate(CarbonHydraulicPlant, stopTime=3600, numberOfIntervals=7200, tolerance=1e-9, outputFormat="csv", fileNamePrefix="t1100_lower_stress", simflags="-override=stress=2e9");
+getErrorString();
+simulate(CarbonHydraulicPlant, stopTime=3600, numberOfIntervals=7200, tolerance=1e-9, outputFormat="csv", fileNamePrefix="cnt_extrapolation", simflags="-override=stress=6.25e9,modulus=370e9,density=1666.66666666667");
+getErrorString();

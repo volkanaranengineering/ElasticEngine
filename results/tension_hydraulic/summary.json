@@ -1,0 +1,70 @@
+{
+  "basis": {
+    "length_m": 100,
+    "area_m2": 0.005,
+    "strain": 0.003,
+    "mass_kg": 950.0,
+    "gross_energy_J": 102600.0,
+    "force_initial_N": 684000.0,
+    "cylinder_effective_area_m2": 0.025992,
+    "equivalent_bore_mm": 181.9176798630533,
+    "initial_pressure_bar": 250,
+    "useful_stroke_m": 0.27,
+    "eta_assumed": 0.81225,
+    "gross_specific_Wh_kg": 0.03,
+    "tension_vs_endloaded_leaf_energy_ratio": 9
+  },
+  "cases": {
+    "variable_motor": {
+      "delivered_J": 82503.43862698553,
+      "expected_delivered_J": 82503.48150000001,
+      "end_time_s": 8.375343862225993,
+      "residual_energy_J": 1025.999999991874,
+      "cylinder_loss_J": 5078.697360848611,
+      "valve_loss_J": 0.0,
+      "motor_loss_J": 13991.81122913793,
+      "max_energy_error_J": 0.05278303605155088,
+      "peak_flow_L_min": 280.70175438707645,
+      "peak_required_displacement_cc_rev": 177.7777777784818,
+      "peak_piston_speed_m_s": 0.1799924043212504,
+      "modules_for_100kWh_energy_only": 4370,
+      "spring_mass_tonnes": 4151.5,
+      "installed_delivered_kWh": 100.1500594875,
+      "net_specific_energy_Wh_kg": 0.024123825000000005
+    },
+    "fixed_motor": {
+      "delivered_J": 82503.4814940298,
+      "expected_delivered_J": 82503.48150000001,
+      "end_time_s": 15.12563299991665,
+      "residual_energy_J": 1025.999999992614,
+      "cylinder_loss_J": 5078.699999632495,
+      "valve_loss_J": 0.0,
+      "motor_loss_J": 13991.81849898751,
+      "max_energy_error_J": 8.053772035054862e-06,
+      "peak_flow_L_min": 28.070175438596504,
+      "peak_required_displacement_cc_rev": 17.77777777777778,
+      "peak_piston_speed_m_s": 0.01799924043205377,
+      "modules_for_100kWh_energy_only": 4370,
+      "spring_mass_tonnes": 4151.5,
+      "installed_delivered_kWh": 100.1500594875,
+      "net_specific_energy_Wh_kg": 0.024123825000000005
+    },
+    "fixed_header": {
+      "delivered_J": 41668.42500003237,
+      "expected_delivered_J": 41668.425,
+      "end_time_s": 4.29184249983735,
+      "residual_energy_J": 25649.99999996014,
+      "cylinder_loss_J": 3847.499999742407,
+      "valve_loss_J": 24367.49999506781,
+      "motor_loss_J": 7066.57500000549,
+      "max_energy_error_J": 5.409761797636747e-06,
+      "peak_flow_L_min": 56.140350877192986,
+      "peak_required_displacement_cc_rev": 35.55555555555555,
+      "peak_piston_speed_m_s": 0.03599848086410754,
+      "modules_for_100kWh_energy_only": 8640,
+      "spring_mass_tonnes": 8208.0,
+      "installed_delivered_kWh": 100.00422,
+      "net_specific_energy_Wh_kg": 0.01218375
+    }
+  }
+}

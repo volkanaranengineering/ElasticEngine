@@ -1,0 +1,17 @@
+/tools/
+/results/**
+!/results/**/
+!/results/**/*.png
+!/results/**/*.svg
+!/results/**/*.json
+!/results/**/*.csv
+!/results/**/*.html
+!/results/**/*.FCStd
+!/results/**/*.step
+/results/**/mplconfig/
+/results/**/*_info.json
+*.FCStd1
+*.FCBak
+.env
+.env.*
+__pycache__/

@@ -1,0 +1,50 @@
+model TensionHydraulic
+  parameter Integer mode=1 "1 variable motor; 2 fixed motor; 3 fixed pressure header";
+  parameter Real E=45.6e9 "Pa longitudinal laminate modulus";
+  parameter Real rho=1900 "kg/m3 assumed";
+  parameter Real L=100 "m bundle free length";
+  parameter Real area=0.005 "m2 total load-bearing composite area";
+  parameter Real strain0=0.003;
+  parameter Real k=E*area/L;
+  parameter Real x0=L*strain0;
+  parameter Real etaC=0.95 "assumed cylinder efficiency";
+  parameter Real etaV=0.95 "assumed motor volumetric efficiency";
+  parameter Real etaM=0.90 "assumed motor mechanical efficiency";
+  parameter Real p0=25e6 "Pa net initial pressure";
+  parameter Real Ac=etaC*k*x0/p0 "m2 effective piston area";
+  parameter Real Pnom=10000 "W nominal output per lane";
+  parameter Real speed=25 "rev/s prescribed motor speed";
+  parameter Real ramp=0.25 "s ideal power-command ramp";
+  parameter Real xf=if mode==3 then 0.5*x0 else 0.1*x0;
+  Real x(start=x0,fixed=true) "m remaining extension";
+  discrete Boolean active(start=true,fixed=true);
+  Real command, force, sourcePressure, motorPressure, flowRate, velocity;
+  Real displacement "m3/rev demanded displacement";
+  Real shaftPower, torque, stored;
+  Real delivered(start=0,fixed=true);
+  Real cylinderLoss(start=0,fixed=true);
+  Real valveLoss(start=0,fixed=true);
+  Real motorLoss(start=0,fixed=true);
+  Real residual;
+equation
+  when x<=xf then
+    active=false;
+  end when;
+  force=k*x;
+  sourcePressure=etaC*force/Ac;
+  motorPressure=if mode==3 then 0.5*p0 else sourcePressure;
+  command=if active then Pnom*min(time/ramp,1) else 0;
+  shaftPower=if mode==2 then command*sourcePressure/p0 else command;
+  flowRate=shaftPower/(etaV*etaM*motorPressure);
+  velocity=flowRate/Ac;
+  der(x)=-velocity;
+  displacement=flowRate*etaV/speed;
+  torque=shaftPower/(2*Modelica.Constants.pi*speed);
+  stored=0.5*k*x*x;
+  der(delivered)=shaftPower;
+  der(cylinderLoss)=(1-etaC)*force*velocity;
+  der(valveLoss)=(sourcePressure-motorPressure)*flowRate;
+  der(motorLoss)=(1-etaV*etaM)*motorPressure*flowRate;
+  residual=stored+delivered+cylinderLoss+valveLoss+motorLoss-0.5*k*x0*x0;
+end TensionHydraulic;
+

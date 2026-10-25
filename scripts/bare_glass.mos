@@ -1,0 +1,12 @@
+loadModel(Modelica);
+loadFile("../../models/TensionHydraulic.mo");
+loadFile("../../models/BareGlassHydraulic.mo");
+getErrorString();
+simulate(BareGlassHydraulic, stopTime=40, numberOfIntervals=2000, tolerance=1e-10, outputFormat="csv", fileNamePrefix="glass_same_strain", simflags="-override=peakStress=260700000");
+getErrorString();
+simulate(BareGlassHydraulic, stopTime=80, numberOfIntervals=2000, tolerance=1e-10, outputFormat="csv", fileNamePrefix="glass_0_5GPa", simflags="-override=peakStress=500000000");
+getErrorString();
+simulate(BareGlassHydraulic, stopTime=260, numberOfIntervals=3000, tolerance=1e-10, outputFormat="csv", fileNamePrefix="glass_1GPa");
+getErrorString();
+simulate(BareGlassHydraulic, stopTime=1000, numberOfIntervals=4000, tolerance=1e-10, outputFormat="csv", fileNamePrefix="glass_2GPa", simflags="-override=peakStress=2000000000");
+getErrorString();

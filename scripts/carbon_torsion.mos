@@ -1,0 +1,9 @@
+loadModel(Modelica);
+loadFile("../../models/CarbonTorsionPlant.mo");
+getErrorString();
+simulate(CarbonTorsionPlant, stopTime=3600, numberOfIntervals=3600, tolerance=1e-9, outputFormat="csv", fileNamePrefix="carbon_reference");
+getErrorString();
+simulate(CarbonTorsionPlant, stopTime=3600, numberOfIntervals=3600, tolerance=1e-9, outputFormat="csv", fileNamePrefix="carbon_upper", simflags="-override=scale=1,twistFraction=1,etaRope=0.9,etaCollection=0.97,etaGenerator=0.97,etaConverter=0.99,retention=0.99");
+getErrorString();
+simulate(CarbonTorsionPlant, stopTime=3600, numberOfIntervals=3600, tolerance=1e-9, outputFormat="csv", fileNamePrefix="carbon_derated", simflags="-override=scale=0.1,twistFraction=0.5,etaRope=0.8,etaCollection=0.75,etaGenerator=0.9,etaConverter=0.95,retention=0.8");
+getErrorString();
