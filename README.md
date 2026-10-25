@@ -6,6 +6,7 @@
 
 ## Sonuçlara erişim
 
+- **[Sistem nasıl çalışır? — Türkçe mekanik rehber](results/turkce_sunum/MEKANIK_CALISMA_REHBERI_TR.html)** — Hücre görünümü, doldurma/bekletme/boşaltma çevrimi, iki mekanik iş yolu ve kartuş geçişi. HTML dosyasını indirip tarayıcıda açın.
 - **[Türkçe ayrıntılı teknik rapor](results/turkce_sunum/TEKNIK_SONUC_RAPORU_TR.html)** — İndirip tarayıcıda açın. Şemalar ve grafikler dosyaya gömülüdür.
 - [Sistem şeması](results/turkce_sunum/sistem_semasi.svg) ve [kartuş çalışma şeması](results/turkce_sunum/kartus_semasi.svg).
 - [FreeCAD yerleşimi](results/turkce_sunum/kavramsal_yerlesim.FCStd) ve [STEP dosyası](results/turkce_sunum/kavramsal_yerlesim.step).
@@ -14,6 +15,10 @@
 ![Türkçe hesaplama sonuçları](results/turkce_sunum/hesaplama_sonuclari.png)
 
 ## Güncel kavram
+
+![Tek hücrenin mekanik çalışma ilkesi](results/turkce_sunum/hucre_mekanigi.png)
+
+![Kartuşun dört çalışma durumu](results/turkce_sunum/calisma_cevrimi.png)
 
 Utsumi ve arkadaşlarının 2024 çalışmasındaki Şekil 6 önerisinden hareketle kısa halat hücreleri, ortak tutucular ve makaralı mekanik iş toplama değerlendirilmiştir. Burulma ve eksenel iş birlikte ele alınır. Her biri 20 kartuş içeren 10 güç kolu ortak mile bağlanır.
 
